@@ -1,0 +1,13 @@
+id: course-correction
+prompt: "Halfway through implementation, telemetry shows the targeted workflow is used by under 1 percent of users and interviews reveal the main problem occurs in a different workflow. Continue delivering value without discarding valid work unnecessarily."
+must:
+  - "Separate facts, inferences, assumptions, and unknowns"
+  - "Assess whether the value hypothesis and active scope remain valid"
+  - "Preserve reusable work and evidence"
+  - "Recommend the smallest correction and identify new authority needed"
+  - "Repeat only affected decisions and gates"
+must_not:
+  - "Blindly complete the obsolete plan"
+  - "Restart all discovery and engineering without assessing preserved evidence"
+  - "Silently change material scope"
+

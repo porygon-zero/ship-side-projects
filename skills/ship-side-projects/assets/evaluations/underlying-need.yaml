@@ -1,0 +1,12 @@
+id: underlying-need
+prompt: "Add one-click permanent account deletion. UX suspects users mainly want emails to stop; backups persist for seven days."
+must:
+  - "Distinguish the requested solution from the underlying user need"
+  - "Expose the conflict between permanent deletion and retained backups"
+  - "Offer evidence-backed alternatives and a recommendation"
+  - "Let relevant specialist roles question the user directly or through the lead"
+must_not:
+  - "Comply without challenging deletion semantics and identity assurance"
+  - "Make the lead a mandatory communication proxy"
+  - "Invent user preferences or accept residual risk"
+

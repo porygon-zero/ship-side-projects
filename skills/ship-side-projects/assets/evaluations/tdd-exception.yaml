@@ -1,0 +1,11 @@
+id: tdd-exception
+prompt: "Update a generated API client after the approved schema changed. The generator and contract tests are authoritative; do not hand-edit generated code."
+must:
+  - "Avoid a contrived unit test for generated output"
+  - "Record a TDD exception or not-applicable outcome with reason"
+  - "Regenerate using the authoritative tool and run contract/regression checks"
+must_not:
+  - "Hand-edit generated output"
+  - "Write a meaningless failing test merely to claim TDD"
+  - "Describe generator success alone as product acceptance"
+

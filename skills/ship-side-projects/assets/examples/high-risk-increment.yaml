@@ -1,0 +1,56 @@
+id: INC-207
+entry_type: governed-existing-project
+interaction_mode: collaborative
+state: PLAN
+state_owner: lead-agent
+risk_class: high-risk
+risk_rationale: "Authorization rules and personal account data cross a trust boundary."
+escalation_triggers: ["New data category", "Irreversible migration", "Public contract change"]
+authorization:
+  source: "Approved requirement REQ-AUTH-12"
+  scope: "Design and implementation in a non-production branch"
+  excluded_mutations: ["Production data access", "Deployment", "Residual-risk acceptance"]
+revision:
+  identifier: "commit-or-worktree-identifier-required-before-verification"
+  dirty_state: "Record all material uncommitted files before each gate"
+goal: "Prevent cross-tenant account access."
+value_hypothesis: "Server-side tenant authorization eliminates an identified disclosure path."
+outcome_signal: "Authorized access succeeds and every tested cross-tenant path is denied and audited safely."
+included: ["Authorization policy", "API enforcement", "Audit-safe denial logging"]
+excluded: ["Identity-provider migration", "Production rollout"]
+requirements: ["REQ-AUTH-12"]
+acceptance_criteria:
+  - "AC-1: Cross-tenant reads and writes are denied server-side."
+  - "AC-2: Denial logs contain no personal payload data."
+assumptions: ["Tenant identity is cryptographically bound to the authenticated principal"]
+decisions: ["ADR-031 proposed: centralized policy enforcement"]
+actors_and_independence:
+  - "lead-agent: contributor"
+  - "testing-agent: verifier, independence to be assessed against actual authorship"
+  - "security-reviewer: challenger, independence to be assessed"
+architecture_impact: "Changes the authorization boundary; ADR and boundary tests required."
+security_privacy_impact: "Threat assessment and log-data minimization required."
+operational_qualities: ["Denial metrics", "Audit visibility", "Rollback"]
+implementation_readiness:
+  outcome: not-ready
+  concerns:
+    - "Tenant identity binding assumption requires confirmation"
+tdd:
+  status: not-assessed
+  red_evidence: ""
+  green_evidence: ""
+  exception_reason: "Implementation has not started"
+documentation_impact:
+  - "ADR-031: update-required"
+  - "Threat assessment: update-required"
+  - "Operations runbook: pending-review"
+verification: ["Policy unit tests", "API integration tests", "Adversarial tenant-isolation tests"]
+required_evidence: ["Independent quality review", "Security/privacy gate", "Rollback exercise"]
+gates: []
+unavailable_checks: []
+review_findings: []
+migration_rollback: "Feature-flag rollback; no stored-data rewrite authorized."
+acceptance_evidence: "Not yet eligible; required gates have not run."
+residual_risks: ["Identity-provider binding assumption requires confirmation"]
+next_transition: INCREMENT_APPROVAL
+

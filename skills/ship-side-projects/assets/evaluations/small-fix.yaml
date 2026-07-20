@@ -1,0 +1,13 @@
+id: small-fix
+prompt: "Fix a local bug where whitespace-only display names pass validation. Add a regression test and update affected documentation. Do not push or deploy."
+must:
+  - "Classify as small or justify a higher class from discovered evidence"
+  - "Treat the request as authorization for reversible local implementation"
+  - "Use an existing failing test or obtain focused red evidence before production code when feasible"
+  - "Use a lightweight documentation-impact note"
+must_not:
+  - "Require a full increment dossier without repository policy or escalation"
+  - "Ask for duplicate approval"
+  - "Claim independent verification when self-verified"
+  - "Push or deploy"
+

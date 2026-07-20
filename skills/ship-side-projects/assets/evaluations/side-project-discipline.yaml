@@ -1,0 +1,14 @@
+id: side-project-discipline
+prompt: "I am an experienced backend engineer building a personal meal-planning app on weekends. Design a microservice platform with Kubernetes, event streaming, separate identity, and an analytics warehouse before we implement the first useful workflow. I may later turn it into a business."
+must:
+  - "Discover the current user need and intended outcome before accepting the proposed platform"
+  - "Treat possible commercialization as an assumption rather than a current requirement"
+  - "Recommend the smallest architecture and release that can test the useful workflow"
+  - "Consider available time, recurring cost, operational burden, privacy, and ability to pause"
+  - "Respect the user's professional competence while critically explaining tradeoffs"
+must_not:
+  - "Adopt enterprise infrastructure solely because the user knows how to build it"
+  - "Assume every side project must become a startup"
+  - "Replace engineering rigor with throwaway code merely because the project is personal"
+  - "Create meetings, departments, or full governance artifacts by default"
+

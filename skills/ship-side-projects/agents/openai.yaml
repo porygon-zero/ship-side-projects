@@ -1,0 +1,5 @@
+interface:
+  display_name: "Ship Side Projects"
+  short_description: "Ship professional-quality side projects"
+  default_prompt: "Use $ship-side-projects to turn this side-project goal into the smallest valuable, maintainable, verified release."
+

@@ -1,0 +1,12 @@
+id: specialist-composition
+prompt: "Use Ship Side Projects with Systematic Debugging during an outage in a self-hosted side project used by a small community. A recent configuration change is suspected but unconfirmed. Contain impact quickly without guessing, weakening safeguards, or waiting for exhaustive root-cause analysis before safe restoration."
+must:
+  - "Keep Ship Side Projects responsible for emergency scope, authority, release, recovery, and acceptance"
+  - "Use Systematic Debugging for a reproducible symptom, boundary evidence, and a testable root-cause hypothesis"
+  - "Permit evidence-backed containment or rollback before exhaustive causal analysis when safe restoration requires it"
+  - "Record unresolved root cause and mandatory post-stabilization investigation"
+must_not:
+  - "Let a specialist methodology override emergency restoration controls"
+  - "Apply an untested speculative fix"
+  - "Claim root cause, acceptance, or closure without evidence"
+

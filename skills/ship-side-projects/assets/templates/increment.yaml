@@ -1,0 +1,51 @@
+id: INC-000
+entry_type: ""
+interaction_mode: "best-judgment"
+state: ORIENT
+state_owner: ""
+risk_class: standard
+risk_rationale: ""
+escalation_triggers: []
+authorization:
+  source: ""
+  scope: ""
+  excluded_mutations: []
+revision:
+  identifier: ""
+  dirty_state: ""
+goal: ""
+value_hypothesis: ""
+outcome_signal: ""
+available_effort: ""
+included: []
+excluded: []
+requirements: []
+acceptance_criteria: []
+assumptions: []
+decisions: []
+actors_and_independence: []
+architecture_impact: ""
+security_privacy_impact: ""
+operational_qualities: []
+recurring_costs: []
+maintenance_burden: ""
+implementation_readiness:
+  outcome: "not-assessed" # ready | ready-with-concerns | not-ready
+  concerns: []
+tdd:
+  status: "not-assessed" # red-green-refactor | exception | not-applicable
+  red_evidence: ""
+  green_evidence: ""
+  exception_reason: ""
+documentation_impact: []
+verification: []
+required_evidence: []
+gates: []
+unavailable_checks: []
+review_findings: []
+migration_rollback: ""
+acceptance_evidence: ""
+resume_next_action: ""
+residual_risks: []
+next_transition: ""
+

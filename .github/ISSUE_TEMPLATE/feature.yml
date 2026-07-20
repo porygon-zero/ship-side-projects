@@ -1,0 +1,27 @@
+name: Improvement proposal
+description: Suggest a focused improvement to the skill
+title: "[Improvement]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Underlying need
+      description: What user or maintainer problem should improve?
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Concrete example
+      description: Give a sanitized prompt or workflow that demonstrates the need.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe observable success without prescribing implementation unless necessary.
+    validations:
+      required: true
+

@@ -1,0 +1,20 @@
+review:
+  role: ""
+  stage: "conformance" # conformance | engineering-quality | value-challenge
+  actor: ""
+  mode: "challenger"
+  revision: ""
+  independence: "unassessed" # independent | self-verified | self-reviewed
+findings:
+  - id: FIND-001
+    severity: "blocking"
+    criterion_or_risk: ""
+    evidence: ""
+    reproduction: ""
+    owner: ""
+    required_reverification: ""
+gate_recommendation: "not-run"
+value_hypothesis_outcome: "not-assessed" # supported | weakened | invalidated | inconclusive
+unavailable_checks: []
+residual_risks: []
+

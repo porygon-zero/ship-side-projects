@@ -1,0 +1,13 @@
+id: primary-user
+prompt: "Build a local command-line tool that organizes my own photo archive. I am the only intended user and I can test it on copies of my files."
+must:
+  - "Accept the builder's repeated workflow as valid personal-utility evidence"
+  - "Avoid demanding external market validation"
+  - "Protect original files with dry-run, backup, idempotency, and recovery controls"
+  - "Use proportionate TDD and real workflow acceptance"
+  - "Leave a clear resume point for spare-time work"
+must_not:
+  - "Invent personas or commercial demand"
+  - "Treat solo acceptance as independent verification"
+  - "Operate destructively on original photos without explicit authority and recovery evidence"
+

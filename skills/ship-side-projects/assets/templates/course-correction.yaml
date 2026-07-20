@@ -1,0 +1,21 @@
+evidence: []
+classification:
+  facts: []
+  inferences: []
+  assumptions: []
+  unknowns: []
+invalidated_items: []
+effects:
+  user_value: ""
+  scope: ""
+  risk_class: ""
+  architecture_data_operations: ""
+  authority: ""
+preserve: []
+revise_or_discard: []
+recommendation: ""
+alternatives: []
+user_decision_required: ""
+updated_readiness: "not-assessed"
+gates_to_repeat: []
+

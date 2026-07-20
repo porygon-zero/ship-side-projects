@@ -1,0 +1,54 @@
+id: INC-142
+entry_type: maintenance-fix
+interaction_mode: best-judgment
+state: HANDOFF
+state_owner: lead-agent
+risk_class: small
+risk_rationale: "Contained validation bug; no schema, trust-boundary, or deployment change."
+escalation_triggers: ["Stored-data behavior changes", "Public error contract changes"]
+authorization:
+  source: "Builder request to fix empty display-name acceptance"
+  scope: "Validation, regression test, and affected documentation"
+  excluded_mutations: ["Push", "Deployment"]
+revision:
+  identifier: "working-tree"
+  dirty_state: "Only the named validator, its test, and validation guide changed"
+goal: "Reject whitespace-only display names consistently."
+value_hypothesis: "Earlier validation prevents invalid profiles and support work."
+outcome_signal: "Whitespace-only input returns the documented validation error."
+available_effort: "One focused evening"
+included: ["Validator behavior", "Regression test", "Validation guide"]
+excluded: ["Profile schema changes", "Deployment"]
+acceptance_criteria:
+  - "AC-1: Empty and whitespace-only display names return validation_error."
+assumptions: []
+decisions: []
+actors_and_independence: ["lead-agent: implementer and self-verifier"]
+architecture_impact: "None; existing validation boundary retained."
+security_privacy_impact: "No new data collection, storage, or exposure."
+operational_qualities: []
+recurring_costs: []
+maintenance_burden: "No new service or dependency"
+implementation_readiness:
+  outcome: ready
+  concerns: []
+tdd:
+  status: red-green-refactor
+  red_evidence: "Focused regression failed because whitespace-only input was accepted"
+  green_evidence: "Focused regression and affected validator suite passed"
+  exception_reason: ""
+documentation_impact:
+  - "Validation guide: updated"
+verification:
+  - "Focused validator tests: passed"
+required_evidence: ["Focused regression", "Documentation review"]
+gates:
+  - "Quality: passed, self-verified"
+unavailable_checks: []
+review_findings: []
+migration_rollback: "No migration; revert the scoped change."
+acceptance_evidence: "Pending builder review of the real profile workflow"
+resume_next_action: "Run the profile workflow and record acceptance"
+residual_risks: ["Full suite not required by the classified scope"]
+next_transition: ACCEPTANCE
+
