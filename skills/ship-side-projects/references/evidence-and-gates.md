@@ -30,9 +30,8 @@ One actor may perform multiple passes, but keep findings and independence labels
 
 ## Definition of Done
 
-Applicable acceptance criteria are demonstrably met; required checks pass; unexplained flakiness and blocking defects are absent; security/privacy decisions are approved; relevant accessibility and release-readiness evidence exists; documentation and examples agree with behavior; the impact map is reconciled; residual risks and unavailable checks are explicit; unrelated work is preserved; and the handoff is reproducible.
+Applicable acceptance criteria are demonstrably met; required local and repository-hosted checks pass for the final revision or are explicitly unavailable; unexplained flakiness and blocking defects are absent; security/privacy decisions are approved; relevant accessibility and release-readiness evidence exists; documentation and examples agree with behavior; the impact map is reconciled; residual risks and unavailable checks are explicit; unrelated work is preserved; and the handoff is reproducible.
 
 ## Handoff evidence
 
-Include goal and value, included/excluded scope, requirement/UX/architecture decisions, risk-to-evidence results, security/privacy findings, documentation changes, operational/migration/rollback notes, residual risks, acceptance outcome, and exact commands run.
-
+Include goal and value, included/excluded scope, requirement/UX/architecture decisions, risk-to-evidence results, security/privacy findings, documentation changes, operational/migration/rollback notes, repository-automation definitions and hosted run status, residual risks, acceptance outcome, and exact commands run.

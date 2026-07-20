@@ -36,11 +36,12 @@ Use pragmatic DDD, arc42, ADRs, domain-first organization, and hexagonal boundar
 
 1. Propose the smallest coherent, independently valuable/testable slice or risk-reduction experiment that fits the builder's available time and energy. Use Scrum terminology only when the project actually uses Scrum.
 2. Record included and excluded scope, value hypothesis and outcome signal, traceable acceptance criteria, assumptions, affected architecture/domain, risks, verification, security/privacy, operational qualities, documentation impact, planned user test, rollback/migration needs, recurring costs, maintenance burden, and residual unknowns at the depth required by the change class.
-3. For standard, high-risk, and emergency reconciliation work, create a documentation impact map. For trivial and small work, use an equivalent concise note unless the repository requires the full map. Start each artifact as `pending-review`; finish it as `updated`, `reviewed-unchanged` with a reason, or `not-applicable` with a reason.
-4. Use focused UX questions and low-cost mock-ups only when interaction uncertainty warrants them. Group independent mechanical questions; ask decision-bearing questions one at a time.
-5. Apply the relevant architecture and pre-implementation security/privacy review. When risk warrants independence, have testing derive its risk-based checks before implementation without prescribing implementation details.
-6. Record the authorization source. The builder normally owns product decisions and may also be the primary user, but do not invent feedback from other target users. Obtain explicit user direction for a material requirement/design decision, sensitive-data use, accepted material risk, irreversible action, deployment, spending commitment, or material active-scope change. Treat the original request as authorization for ordinary reversible implementation within its clear scope; do not introduce a duplicate approval stop.
-7. Record implementation readiness as `ready`, `ready-with-concerns`, or `not-ready`. Proceed with owned non-blocking concerns; do not implement through a specific missing decision, authority, testability seam, or material uncontrolled risk.
+3. Assess repository-hosted automation as part of the slice: identify which repeatable tests, linting, type checks, builds, packaging, security checks, or deployment gates should run on pushes, pull requests, tags, or releases. Extend the repository's existing CI provider and conventions; for GitHub repositories, prefer focused GitHub Actions workflows. Record a proportionate `not-applicable` reason when local-only automation is sufficient.
+4. For standard, high-risk, and emergency reconciliation work, create a documentation impact map. For trivial and small work, use an equivalent concise note unless the repository requires the full map. Start each artifact as `pending-review`; finish it as `updated`, `reviewed-unchanged` with a reason, or `not-applicable` with a reason.
+5. Use focused UX questions and low-cost mock-ups only when interaction uncertainty warrants them. Group independent mechanical questions; ask decision-bearing questions one at a time.
+6. Apply the relevant architecture and pre-implementation security/privacy review. When risk warrants independence, have testing derive its risk-based checks before implementation without prescribing implementation details.
+7. Record the authorization source. The builder normally owns product decisions and may also be the primary user, but do not invent feedback from other target users. Obtain explicit user direction for a material requirement/design decision, sensitive-data use, accepted material risk, irreversible action, deployment, spending commitment, or material active-scope change. Treat the original request as authorization for ordinary reversible implementation within its clear scope; do not introduce a duplicate approval stop.
+8. Record implementation readiness as `ready`, `ready-with-concerns`, or `not-ready`. Proceed with owned non-blocking concerns; do not implement through a specific missing decision, authority, testability seam, or material uncontrolled risk.
 
 Protect the active slice from silent expansion. Put non-blocking discoveries in the ordered next-bets list.
 
@@ -52,9 +53,10 @@ Protect the active slice from silent expansion. Put non-blocking discoveries in 
 4. For behavior-changing production code, default to test-driven development: make a focused test fail for the intended reason, implement the smallest behavior that makes it pass, then refactor while green. Preserve the red and green evidence when practical. Read [references/developer-practice.md](references/developer-practice.md) for legitimate exceptions; never write a meaningless test merely to claim TDD.
 5. Keep domain logic independent from delivery and infrastructure mechanisms when the chosen architecture calls for that boundary.
 6. Update behavior, contracts, architecture, security, operations, examples, and user guidance in the same change. Never knowingly defer documentation drift.
-7. Prefer the simplest architecture and service footprint that can support the observed need. Avoid speculative platforms, premature multi-service decomposition, and dependencies whose recurring financial or operational cost is not justified.
-8. Return contradictions or material new evidence to the accountable perspective and update living records immediately. Follow [references/correct-course.md](references/correct-course.md) when evidence invalidates material scope, value, architecture, risk, or authority; preserve valid completed work and repeat only affected decisions and gates.
-9. Stop for user direction when required authority, credentials, a behavior-defining choice, destructive migration approval, spending commitment, or resolution of overlapping user work is unavailable.
+7. Add or update repository-hosted automation when it gives the project repeatable, low-maintenance evidence. Keep it aligned with documented local commands, use least-privilege permissions and safe secret handling, avoid untrusted-code privilege escalation, and do not add an empty or permanently failing workflow merely to claim CI. Read [references/developer-practice.md](references/developer-practice.md) for the automation decision and implementation rules.
+8. Prefer the simplest architecture and service footprint that can support the observed need. Avoid speculative platforms, premature multi-service decomposition, and dependencies whose recurring financial or operational cost is not justified.
+9. Return contradictions or material new evidence to the accountable perspective and update living records immediately. Follow [references/correct-course.md](references/correct-course.md) when evidence invalidates material scope, value, architecture, risk, or authority; preserve valid completed work and repeat only affected decisions and gates.
+10. Stop for user direction when required authority, credentials, a behavior-defining choice, destructive migration approval, spending commitment, or resolution of overlapping user work is unavailable.
 
 ## Verify from risk
 
@@ -70,16 +72,18 @@ Record the exact tested revision, including relevant dirty-worktree content, and
 
 Run documented critical commands and validate links, schemas, fixtures, examples, and user journeys where practical. Repeat affected checks and regression coverage after corrections. See [references/evidence-and-gates.md](references/evidence-and-gates.md).
 
+When repository automation exists or is added, inspect the workflow definition and obtain the final hosted run for the exact pushed revision when the user has authorized the push. A local pass does not prove that GitHub Actions or another provider is configured correctly; a hosted green run does not replace product-facing evidence. If remote execution is unavailable or not authorized, validate as far as possible locally and report the workflow as `not-run` with the exact residual risk.
+
 ## Review and hand off
 
 1. Arrange product-facing acceptance after required quality and security/privacy gates pass. If the builder is the primary user, test the real workflow and label that evidence honestly; for products serving others, seek representative user feedback proportionate to the uncertainty.
 2. If rejected, return work to the responsible perspective and repeat affected gates before retest.
 3. If accepted, reconcile the documentation impact map and record acceptance evidence, residual risks, and reviewed-unchanged artifacts.
 4. Prepare a cohesive handoff appropriate to the environment: verified working tree, patch, commit, GitHub/GitLab/Bitbucket pull request, or release package. Do not require GitHub when another endpoint is appropriate.
-5. Push, open a pull request, deploy, send messages, or perform other external mutations only with current authority and satisfied prerequisites.
-6. Record a concise retrospective with actionable improvements.
+5. Include the repository-automation result in the handoff: workflow files changed, triggers, commands and gates covered, exact hosted run status or `not-run` reason, and any recommended branch or release protection. Do not silently enable paid services, secrets, deployments, or external integrations.
+6. Push, open a pull request, deploy, send messages, or perform other external mutations only with current authority and satisfied prerequisites.
+7. Record a concise retrospective with actionable improvements.
 
 Read [references/role-charter.md](references/role-charter.md) when selecting perspectives, defining done, or evaluating a gate. Use [references/artifact-contracts.md](references/artifact-contracts.md) and the reusable files under `assets/templates/` only when their value exceeds their upkeep. Record review findings with `assets/templates/review-findings.yaml` or an equivalent project format. Consult `assets/examples/` only when a concrete record would clarify the required depth; adapt it rather than copying claims or outcomes. When maintaining this skill, use [references/skill-evaluation.md](references/skill-evaluation.md) and `assets/evaluations/` to test behavior on clean agents.
 
 Documentation drift, broken examples or commands, missing approved decisions, dishonest evidence, or an incomplete required impact map fails the Definition of Done.
-

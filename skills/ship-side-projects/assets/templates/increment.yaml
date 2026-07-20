@@ -37,6 +37,15 @@ tdd:
   red_evidence: ""
   green_evidence: ""
   exception_reason: ""
+repository_automation:
+  provider: "" # github-actions | gitlab-ci | other | none
+  status: "not-assessed" # updated | reviewed-unchanged | not-applicable | not-run
+  workflows: []
+  triggers: []
+  commands_and_gates: []
+  hosted_run_revision: ""
+  hosted_run_outcome: ""
+  reason_or_residual_risk: ""
 documentation_impact: []
 verification: []
 required_evidence: []
@@ -48,4 +57,3 @@ acceptance_evidence: ""
 resume_next_action: ""
 residual_risks: []
 next_transition: ""
-
