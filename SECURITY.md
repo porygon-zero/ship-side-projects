@@ -4,11 +4,10 @@
 
 Do not disclose suspected vulnerabilities in a public issue.
 
-While this repository is private, contact the repository owner through GitHub. Before public publication, enable GitHub private vulnerability reporting and update this section with the exact reporting route and expected response window.
+Use GitHub's private vulnerability reporting feature when it is available for this repository. Because this is a spare-time personal project, reports are reviewed on a best-effort basis and no response time is guaranteed.
 
 Include a concise description, affected content or workflow, reproduction steps, impact, and any suggested mitigation. Do not include real secrets or sensitive user data in the report.
 
 ## Supported versions
 
-Until versioned releases begin, only the latest commit on the default branch is supported.
-
+Only the latest commit on the default branch is maintained. No formal support commitment or response-time guarantee is provided.

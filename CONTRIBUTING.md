@@ -1,16 +1,7 @@
-# Contributing
+# Project participation
 
-Thank you for improving Ship Side Projects.
+Ship Side Projects is a personal, owner-maintained project. The source is public so others can use it and adapt it, not because the project is seeking collaborators.
 
-## Propose a change
+Issues and pull requests are not currently accepted. I cannot promise review, support, roadmap discussion, or response times. Please do not interpret a lack of response as a judgment on an idea or contribution.
 
-1. Open an issue for substantial behavioral changes so intent and scope can be discussed first.
-2. Keep each change focused on one observable improvement.
-3. Update instructions, references, examples, templates, and evaluations together when behavior changes.
-4. Run `python3 scripts/validate_skill.py` before opening a pull request.
-5. In the pull request, explain the user problem, the chosen approach, verification evidence, and any remaining tradeoffs.
-
-Do not include secrets, private project material, personal data, or content without redistribution rights.
-
-By contributing, you agree that your contribution may be distributed under the repository's license in effect when it is accepted. Contributions are not being accepted for redistribution while the repository remains all-rights-reserved unless the owner agrees otherwise in writing.
-
+You are encouraged to fork the repository and maintain your own variation under the terms of the [MIT License](LICENSE). No permission or coordination is required. If GitHub still presents an issue or pull-request interface, its availability does not override this policy.

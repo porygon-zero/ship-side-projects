@@ -1,15 +1,12 @@
-# Public publication checklist
+# Public repository record
 
-Complete these items before changing repository visibility to public:
+The repository was prepared for public, owner-maintained distribution with these decisions:
 
-- [ ] Review the complete Git history for secrets, personal data, confidential material, and third-party content.
-- [ ] Choose an open-source license and replace the current all-rights-reserved `LICENSE` file.
-- [ ] Confirm every bundled asset and example is owned by the project or compatible with the selected license.
-- [ ] Verify the installation example uses the preferred public clone URL.
-- [ ] Review `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, and `SECURITY.md` for current contact and response details.
-- [ ] Add a repository description, topics, social preview, and homepage where useful.
-- [ ] Enable branch protection and require the validation workflow on the default branch.
-- [ ] Enable secret scanning, push protection, dependency alerts, and private vulnerability reporting where available.
-- [ ] Run `python3 scripts/validate_skill.py` and confirm GitHub Actions passes.
-- [ ] Create a version tag and verify the generated release archive contains only the installable skill directory.
-- [ ] Change visibility only after the preceding review is complete.
+- [x] Publish under the MIT License so others may use, modify, distribute, and fork the work.
+- [x] State that this is a personal project which is not seeking issues, pull requests, or collaborators.
+- [x] Provide a public HTTPS clone URL.
+- [x] Keep repository policy files outside the installable skill directory.
+- [x] Validate skill metadata and local links locally and in GitHub Actions.
+- [x] Package only the installable skill directory for tagged releases.
+
+Repository security and visibility settings should remain aligned with the owner-maintained policy as GitHub features evolve.

@@ -4,12 +4,16 @@
 
 The skill combines proportionate product discovery, scope control, architecture, UX, test-driven development, risk-based verification, security, deployment, and feedback practices. It is written for experienced software builders working with limited time and energy.
 
+## Maintenance model
+
+This is a personal, owner-maintained project. You are welcome to use it, copy it, modify it, and fork it under the [MIT License](LICENSE), but I am not currently looking for collaborators and do not have capacity to review issues or pull requests. Forks are the recommended way to adapt or extend it.
+
 ## Install
 
 Clone this repository, then copy or link the skill directory into your Codex skills directory:
 
 ```sh
-git clone git@github.com:porygon-zero/ship-side-projects.git
+git clone https://github.com/porygon-zero/ship-side-projects.git
 ln -s "$(pwd)/ship-side-projects/skills/ship-side-projects" ~/.codex/skills/ship-side-projects
 ```
 
@@ -33,12 +37,8 @@ Repository-level files document contribution, security, governance, validation, 
 python3 scripts/validate_skill.py
 ```
 
-The validator checks the required skill metadata, directory naming, local Markdown links, and YAML syntax when PyYAML is available. GitHub Actions runs the same checks on pushes and pull requests.
+The validator checks required skill metadata, directory naming, interface metadata, and local Markdown links. GitHub Actions runs the same checks on pushes and pull requests.
 
-## Status
+## Using and adapting the skill
 
-This repository is private and all rights are reserved. Before making it public, complete [the publication checklist](PUBLICATION_CHECKLIST.md), including selecting an open-source license and replacing the current license notice.
-
-## Contributing and security
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution workflow and [SECURITY.md](SECURITY.md) for private vulnerability reporting guidance.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the owner-maintained project policy and [SECURITY.md](SECURITY.md) for security reporting guidance.
