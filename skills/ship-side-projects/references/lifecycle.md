@@ -12,7 +12,7 @@ Treat states as evidence maturity, not exclusive work phases. Record the current
 | `INCREMENT_APPROVAL` | Proposal requiring new authority | Clarification and reversible preparation | Approval, rejection, or recorded authorization from the original request | `IMPLEMENT` or `PLAN` |
 | `IMPLEMENT` | Authorized increment | Code, tests, documentation | Developer handoff | `QUALITY_GATE` |
 | `QUALITY_GATE` | Implemented increment | Independent/risk-led verification and fixes | Recorded quality outcome | `SECURITY_GATE` or `IMPLEMENT` |
-| `SECURITY_GATE` | Threat/privacy scope | Assurance and fixes | Recorded assurance outcome | `RELEASE_READINESS` or `ACCEPTANCE` |
+| `SECURITY_GATE` | Threat/privacy scope | Assurance, fixes, and one runtime/library/framework currency check per increment | Recorded assurance and update-disposition outcome | `RELEASE_READINESS` or `ACCEPTANCE` |
 | `RELEASE_READINESS` | Releasable artifact and runtime impact | Validate packaging, configuration, rollout, observability, migration and recovery | Deployment-readiness outcome | `ACCEPTANCE` or earlier state |
 | `ACCEPTANCE` | Passing required gates | Real workflow review by the builder or representative target user | Acceptance or reproducible rejection, with evidence source labeled | `HANDOFF` or earlier state |
 | `HANDOFF` | Accepted increment | Reconcile docs; prepare authorized delivery artifact | Handoff evidence | `CLOSED` |
@@ -37,4 +37,3 @@ Readiness is an engineering recommendation, not duplicate user approval. Reasses
 - Test/security failure: return to `IMPLEMENT` or the responsible design state.
 - Acceptance rejection: classify the cause, return to the responsible state, and repeat affected verification.
 - External blocker: record exact blocker, completed evidence, safe next action, and required authority or environmental change. Distinguish `blocked` from merely `incomplete`.
-

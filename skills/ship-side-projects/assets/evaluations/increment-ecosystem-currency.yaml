@@ -1,0 +1,13 @@
+id: increment-ecosystem-currency
+prompt: "Implement the next increment in my small application. As part of security, check whether its programming language runtime, libraries, and framework need updates, but do not run update checks continuously or upgrade everything just because a newer release exists."
+must:
+  - "Run one ecosystem currency check during the increment's Security Gate"
+  - "Inspect declared language runtimes or toolchains, direct libraries, and frameworks using authoritative support, release, and advisory sources"
+  - "Record checked versions, source dates, support or vulnerability findings, compatibility impact, and update dispositions"
+  - "Distinguish required security or support updates from non-urgent planned updates"
+  - "Repeat the check only if relevant manifests, lockfiles, runtimes, libraries, or framework versions change after it"
+must_not:
+  - "Run the ecosystem currency check on every edit, commit, or routine test execution"
+  - "Treat every available newer version as a blocking required update"
+  - "Silently expand the active increment to include non-urgent migrations"
+  - "Claim the check passed without dated evidence for the declared ecosystem"

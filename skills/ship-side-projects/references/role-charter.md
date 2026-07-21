@@ -12,7 +12,7 @@ Perspectives are accountability lenses, not a simulated organization and not ins
 | Solution Architect | Context-fit architecture, quality attributes, boundaries, evolutionary decisions and fitness evidence | Approved/current design evidence |
 | Software Developer | Safe idiomatic implementation, behavior-first TDD where feasible, documentation and feedback | Reproducible developer handoff with red/green evidence or an explicit exception |
 | Testing Engineer | Requirements-led risk verification and reproducible defects | Quality outcome with independence label |
-| Security & Privacy Engineer | Threat/privacy, secret/data/log/dependency/config/deployment assurance | Assurance outcome and residual risks |
+| Security & Privacy Engineer | Threat/privacy, secret/data/log/dependency/config/deployment assurance and one ecosystem currency check per increment | Assurance outcome, update dispositions and residual risks |
 | Builder/user | Product, time and spending constraints, material design, sensitive-data, risk and acceptance authority | Direction, acceptance, rejection, or explicit risk acceptance |
 | Deployment responsibility | Packaging, release configuration, runtime verification, observability and recovery | Deployment outcome when relevant |
 
@@ -30,7 +30,7 @@ For every lens, first ask: whose underlying need does this serve, what evidence 
 - **Solution Architect:** Does the design fit observed constraints and quality attributes, preserve useful architecture, expose tradeoffs, and include evolutionary fitness evidence?
 - **Software Developer:** Did implementation collaborate with UX rather than merely receive a handoff, did a focused test expose the missing behavior before production code where feasible, and does the change remain idiomatic, cohesive, maintainable, secure by default, locally testable, documented, and free of unrelated edits?
 - **Testing Engineer:** Can the evidence falsify the criteria across boundaries and failure modes, and does it avoid implementation-biased or flaky oracles?
-- **Security & Privacy Engineer:** Are assets, data, trust boundaries, abuse cases, controls, verification, minimization, and residual risks explicit before and after implementation?
+- **Security & Privacy Engineer:** Are assets, data, trust boundaries, abuse cases, controls, verification, minimization, residual risks, and the increment's runtime/library/framework currency evidence explicit before and after implementation?
 - **Deployment responsibility:** Is the artifact reproducible and observable, with compatible configuration, safe rollout/migration, recovery, and post-release verification?
 - **Builder/user:** Are the demonstrated outcome, time and operating burden, material choices, unavailable evidence, and residual risks understandable enough for a real decision?
 

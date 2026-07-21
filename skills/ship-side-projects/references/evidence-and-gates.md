@@ -20,6 +20,12 @@ Use one outcome: `passed`, `failed`, `not-applicable` with reason, or `not-run` 
 
 Tie every actionable finding to an acceptance criterion, quality attribute, threat, or operational risk. Record severity, evidence, reproduction, blocking status, owner, and required re-verification. A role label alone is not expertise; use the role contract and relevant failure modes to calibrate the review.
 
+## Ecosystem currency
+
+During the Security Gate, perform one currency check per increment for every declared language runtime/toolchain, direct library, and framework. Use authoritative release/support documentation and vulnerability advisories where available; record the checked version, current supported or stable version, support status, relevant advisories, source/date, compatibility or migration implications, and disposition: `update-required-now`, `planned`, `no-update-needed`, or `not-applicable` with reason.
+
+An available update is not automatically required. Make it blocking when the current version is unsupported, materially vulnerable without an adequate mitigation, incompatible with the increment's required environment, or otherwise creates unacceptable risk. Put non-urgent updates in the ordered next bets with rationale rather than broadening active scope. Perform the check once, not on every edit, commit, or routine test run. Repeat it only when a relevant manifest, lockfile, runtime, library, or framework version changes after the recorded check; otherwise retain the original dated evidence for the increment.
+
 ## Review sequence
 
 1. **Outcome and scope conformance:** verify the accepted need, criteria, exclusions, authority, and absence of unapproved behavior.
@@ -32,7 +38,7 @@ One actor may perform multiple passes, but keep findings and independence labels
 
 ## Definition of Done
 
-Applicable acceptance criteria are demonstrably met; required local and repository-hosted checks pass for the final revision or are explicitly unavailable; unexplained flakiness and blocking defects are absent; security/privacy decisions are approved; relevant accessibility and release-readiness evidence exists; applicable pre-acceptance User Agent findings are resolved or explicitly dispositioned; documentation and examples agree with behavior; the impact map is reconciled; residual risks and unavailable checks are explicit; unrelated work is preserved; and the handoff is reproducible.
+Applicable acceptance criteria are demonstrably met; required local and repository-hosted checks pass for the final revision or are explicitly unavailable; unexplained flakiness and blocking defects are absent; security/privacy decisions are approved; the once-per-increment ecosystem currency check is recorded and required updates are completed or adequately mitigated with authorized residual-risk acceptance, otherwise the Security Gate fails; relevant accessibility and release-readiness evidence exists; applicable pre-acceptance User Agent findings are resolved or explicitly dispositioned; documentation and examples agree with behavior; the impact map is reconciled; residual risks and unavailable checks are explicit; unrelated work is preserved; and the handoff is reproducible.
 
 ## Handoff evidence
 

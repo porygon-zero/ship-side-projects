@@ -15,7 +15,7 @@ Default to a short product brief, an ordered next-bets list, repository-native t
 - **Experiment record:** problem or opportunity, target users, intended outcome (utility, learning, community, revenue, or craft), hypothesis, evidence confidence, method, success/invalidation thresholds, guardrails, telemetry, result, decision, and disposal or productionization plan.
 - **Context snapshot:** product/users, source-linked rules, stack/versions, architecture boundaries, security/privacy, commands, deployment/recovery, and unresolved conflicts; omit when authoritative repository guidance is already concise.
 - **Course correction:** new evidence, invalidated item, value/scope/risk effects, preserved and discarded work, new authority, updated readiness, and gates to repeat.
-- **Threat/privacy assessment:** assets/data, trust boundaries, threats, controls, verification, residual risks and acceptance.
+- **Threat/privacy assessment:** assets/data, trust boundaries, threats, controls, verification, residual risks and acceptance, plus the increment's dated runtime/toolchain, direct-library, and framework currency check and update dispositions.
 - **Acceptance record:** revision, criteria, environment, observations, result, rejection evidence, approver/date.
 - **Handoff/PR:** scope, decisions, evidence, documentation, operations, recurring cost, maintenance expectations, residual risks, acceptance.
 

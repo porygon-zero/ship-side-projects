@@ -54,6 +54,16 @@ user_agent_challenge:
   limitation: "Persona-based challenge; not representative-user validation or product acceptance."
 architecture_impact: ""
 security_privacy_impact: ""
+ecosystem_currency_check:
+  status: "not-assessed" # completed | not-applicable | not-run
+  checked_revision: ""
+  checked_at: ""
+  sources: []
+  components: [] # declared/current version | supported/stable version | advisories/support | disposition
+  required_updates: []
+  planned_updates: []
+  repeat_trigger: "Relevant manifest, lockfile, runtime, direct-library, or framework version changed after this check."
+  repeated_after_change: ""
 operational_qualities: []
 recurring_costs: []
 maintenance_burden: ""
