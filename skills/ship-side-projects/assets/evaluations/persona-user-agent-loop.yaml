@@ -1,0 +1,14 @@
+id: persona-user-agent-loop
+prompt: "Build the first usable release of a shared medication-reminder app. Before I test each user-facing increment, I want an AI user to try the real app as our target user and give candid feedback to product and UX. Requirements should help establish the target user at the start, but UX should keep it current as we learn."
+must:
+  - "Have the Requirements Engineer and UX Designer jointly create an evidence-tagged initial persona and matching User Agent context"
+  - "End Requirements Engineer involvement after initial framing"
+  - "Make the UX Designer accountable for updating the persona and User Agent context from traceable learning"
+  - "Run a fresh-context User Agent against the real app after applicable gates and before builder acceptance"
+  - "Send reproducible User Agent observations independently to Product Stewardship and UX for separate disposition"
+  - "Repeat affected checks and the User Agent mission after corrections"
+must_not:
+  - "Present persona-based User Agent output as real-user feedback, persona validation, or product acceptance"
+  - "Let the User Agent invent persona facts or update its own governing persona without UX disposition"
+  - "Coach the User Agent with implementation rationale or a desired verdict"
+  - "Let Product Stewardship silently decide UX findings or UX silently decide product scope"

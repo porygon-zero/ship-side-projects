@@ -5,8 +5,10 @@ Perspectives are accountability lenses, not a simulated organization and not ins
 | Role | Core accountability | Gate or output |
 |---|---|---|
 | Product discovery | Underlying need, intended users, evidence and testable outcome | Credible product brief and open assumptions |
-| Product stewardship | Product goal, ordered next bets, scope, value and user feedback | Authorized goal and current priorities |
-| UX Designer | Continuous collaboration on every user-facing feature: user journeys, interaction/content design, states, prototypes, accessibility/usability criteria and implemented-workflow observation | UX readiness evidence, proposals and findings |
+| Requirements Engineer | Initial elicitation, requirement quality and evidence-tagged persona framing with UX; exits after the baseline | Testable requirement baseline and initial persona handoff |
+| Product Owner / Product stewardship | Product goal, ordered next bets, scope, value and user feedback | Authorized goal and current priorities |
+| UX Designer | Continuous collaboration on every user-facing feature plus ownership of living personas and User Agent context after initial framing | UX readiness evidence, current persona/context, proposals and findings |
+| User Agent | Fresh-context, persona-driven exercise of the real app before builder acceptance; independent feedback to Product Stewardship and UX | Reproducible persona-based observations and findings, never user validation or acceptance |
 | Solution Architect | Context-fit architecture, quality attributes, boundaries, evolutionary decisions and fitness evidence | Approved/current design evidence |
 | Software Developer | Safe idiomatic implementation, behavior-first TDD where feasible, documentation and feedback | Reproducible developer handoff with red/green evidence or an explicit exception |
 | Testing Engineer | Requirements-led risk verification and reproducible defects | Quality outcome with independence label |
@@ -14,15 +16,17 @@ Perspectives are accountability lenses, not a simulated organization and not ins
 | Builder/user | Product, time and spending constraints, material design, sensitive-data, risk and acceptance authority | Direction, acceptance, rejection, or explicit risk acceptance |
 | Deployment responsibility | Packaging, release configuration, runtime verification, observability and recovery | Deployment outcome when relevant |
 
-Apply only the perspectives justified by uncertainty or risk, with one exception: activate the UX Designer perspective for every user-facing feature. Scale its depth rather than omitting it, and let the lead hold it when a separate specialist would add coordination cost without better evidence. Every participating perspective remains accountable to user value and may ask the user questions directly when supported, or indirectly through the lead; the lead is not a mandatory proxy. Coordinate timing and scope commitments under `agent-orchestration.md`. Deployment involvement scales with runtime impact. For a solo project, the builder may own product authority, implementation, operation, and acceptance; keep those authorities distinct from claims of independent technical verification.
+Apply only the perspectives justified by uncertainty or risk, with these user-facing exceptions: activate UX throughout, use Requirements Engineering with UX for initial persona framing, and run the persona-driven User Agent before builder acceptance when the product targets users beyond the builder. Scale artifact depth rather than omitting accountability. Every participating perspective remains accountable to user value and may ask the user questions directly when supported, or indirectly through the lead; the lead is not a mandatory proxy. Coordinate timing and scope commitments under `agent-orchestration.md`. Deployment involvement scales with runtime impact. For a solo builder-only product, the builder may own product authority, implementation, operation, and acceptance, and a separate persona is normally unnecessary; keep those authorities distinct from claims of independent technical verification.
 
 ## Review lenses
 
 For every lens, first ask: whose underlying need does this serve, what evidence supports that need, and how will the user experience or outcome improve? Challenge the stated solution when necessary, while keeping criticism specific, evidence-based, and directed toward a better outcome.
 
 - **Product discovery:** Are the user, underlying need, intended outcome, assumptions, and criteria clear without embedding a predetermined solution?
+- **Requirements Engineer:** At initial framing, are requirements testable and is each persona attribute traceable to evidence or explicitly marked as an assumption before handoff to UX?
 - **Product stewardship:** Is this the smallest coherent value or learning slice that fits the builder's available attention, with an observable outcome and explicit exclusions?
-- **UX Designer:** From the first criterion through the running implementation, is relevant user evidence represented and are the journey, content, interaction states, usability, accessibility, harmful-edge-case, and research/privacy concerns coherent and testable?
+- **UX Designer:** From the first criterion through the running implementation, is relevant user evidence represented; are the persona and User Agent context current; and are the journey, content, interaction states, usability, accessibility, harmful-edge-case, and research/privacy concerns coherent and testable?
+- **User Agent:** Without implementation coaching, can the current persona complete its missions in the real app, and are confusion, mismatch, accessibility barriers, and recovery failures reported reproducibly without claiming to be a real user?
 - **Solution Architect:** Does the design fit observed constraints and quality attributes, preserve useful architecture, expose tradeoffs, and include evolutionary fitness evidence?
 - **Software Developer:** Did implementation collaborate with UX rather than merely receive a handoff, did a focused test expose the missing behavior before production code where feasible, and does the change remain idiomatic, cohesive, maintainable, secure by default, locally testable, documented, and free of unrelated edits?
 - **Testing Engineer:** Can the evidence falsify the criteria across boundaries and failure modes, and does it avoid implementation-biased or flaky oracles?

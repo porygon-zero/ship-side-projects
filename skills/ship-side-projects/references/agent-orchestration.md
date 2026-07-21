@@ -2,7 +2,7 @@
 
 Use perspectives to cover accountability and agents only to obtain bounded expertise, parallel discovery, or credible challenge. The default is one lead helping one experienced builder. Do not spawn an agent merely because a perspective exists.
 
-For every user-facing feature, assign the UX Designer perspective to the lead or a specialist and keep it active across requirements, planning, implementation checkpoints, and implemented-workflow review. Whether to spawn a separate UX agent depends on interaction complexity, uncertainty, available tools, and the value of focused expertise; UX participation itself is not optional.
+For every user-facing feature, assign the UX Designer perspective to the lead or a specialist and keep it active across requirements, planning, implementation checkpoints, and implemented-workflow review. At initial product framing, Requirements Engineering and UX jointly create the evidence-tagged persona and User Agent baseline; Requirements Engineering then exits, while UX owns subsequent updates. Before builder acceptance of work targeting users beyond the builder, spawn a fresh-context User Agent challenger when the environment permits. It must be separate from implementation and should be separate from persona authorship so its challenge is meaningfully independent.
 
 ## Selection
 
@@ -22,7 +22,7 @@ Every participating perspective has access to the user for observations, concern
 
 Ask only when the answer could change the outcome, scope, evidence, risk, or authority, or when engaging the user is itself useful discovery. Identify the speaking role, state why the answer matters, and say what work can safely continue. Let the relevant specialist conduct follow-up directly when useful. Do not use the lead as a filter that suppresses or paraphrases away dissent, and do not let specialists independently commit conflicting scope or approval decisions.
 
-Remain user-centered without becoming complacent. Distinguish the user's stated request from the underlying need, and respectfully test whether the proposed solution is valuable, usable, safe, proportionate, and worth its future maintenance. Offer evidence-backed alternatives and consequences; do not obstruct a sound decision merely because another solution is possible. Never simulate target users, invent their preferences, or replace user-owned decisions with internal consensus.
+Remain user-centered without becoming complacent. Distinguish the user's stated request from the underlying need, and respectfully test whether the proposed solution is valuable, usable, safe, proportionate, and worth its future maintenance. Offer evidence-backed alternatives and consequences; do not obstruct a sound decision merely because another solution is possible. A persona-driven User Agent may simulate tasks to challenge a design, but never present its output as target-user feedback, invent persona facts, or replace user-owned decisions with internal consensus.
 
 ## Agent modes
 
@@ -37,8 +37,10 @@ Do not let one actor author and independently approve the same artifact. Label a
 | Role | Required inputs | Required outputs | May reject | May not decide |
 |---|---|---|---|---|
 | Product discovery | Goals, users, observed context | Testable product brief, assumptions, open decisions | Discovery readiness | Product priority or acceptance |
-| Product stewardship | Goal, evidence, constraints, next bets | Ordered slice, scope, value hypothesis, decision digest | Slice readiness | User approval or material risk acceptance |
-| UX Designer | Users, evidence, journeys, constraints, prototype or running build | Interaction/content decisions, complete state model, usability/accessibility criteria, checkpoint observations and implemented-workflow findings | UX readiness at planning and acceptance | Product priority or implementation mechanism |
+| Requirements Engineer | Goals, stakeholders, evidence, constraints | Testable initial requirements and evidence-tagged persona co-authored with UX | Initial requirements/persona readiness | Ongoing persona maintenance, product priority, or acceptance |
+| Product Owner / Product stewardship | Goal, evidence, constraints, next bets | Ordered slice, scope, value hypothesis, decision digest | Slice readiness | User approval or material risk acceptance |
+| UX Designer | Users, evidence, journeys, constraints, persona, prototype or running build | Interaction/content decisions, complete state model, usability/accessibility criteria, current persona/User Agent context, checkpoint observations and implemented-workflow findings | UX readiness at planning and acceptance | Product priority or implementation mechanism |
+| User Agent | Current persona, missions, criteria, exact revision, real app | Reproducible persona-based observations and findings sent to Product Stewardship and UX | Pre-acceptance persona challenge | Persona truth, product scope, design disposition, acceptance, or representative-user validation |
 | Solution Architect | Requirements, quality attributes, existing system | Boundaries, decisions, risks, fitness evidence | Architecture readiness | Product scope or residual-risk acceptance |
 | Software Developer | Authorized scope, UX decisions and criteria, design constraints, repo state | Collaborative implementation, developer tests/docs, constraint feedback and reproducible handoff | Implementation feasibility | Independent quality/security gate or unilateral material UX change |
 | Testing Engineer | Criteria, risks, exact revision, environment | Risk-derived evidence, defects, gate recommendation | Quality gate | Product acceptance |
@@ -54,7 +56,7 @@ Use a fresh-context challenger or verifier when the lead's accumulated context, 
 
 Parallelize read-only discovery across disjoint concerns. Serialize overlapping edits, generated files, lockfiles, schemas, migrations, behavior-defining decisions, approval transitions, final documentation reconciliation, and external mutations. Assign one writer per overlapping artifact and have the lead integrate findings. Bound each assignment by a concrete question, deliverable, stopping condition, and proportionate effort budget.
 
-Treat UX and development as a feedback loop rather than sequential handoffs. Share design intent and technical constraints early; review the real interface at meaningful checkpoints; return material feasibility, usability, accessibility, or scope conflicts to the accountable perspectives before implementation hardens them. Preserve dissent and the evidence behind the final decision.
+Treat requirements framing, UX, development, and persona-based challenge as a feedback loop rather than sequential handoffs. Share design intent and technical constraints early; review the real interface at meaningful checkpoints; give the User Agent uncoached missions before builder acceptance; and return material feasibility, usability, accessibility, or scope conflicts to the accountable perspectives before implementation hardens them. Product Stewardship and UX receive User Agent feedback directly. UX updates the persona/context with traceable learning, then refreshes later User Agent assignments. Preserve dissent and the evidence behind the final decision.
 
 ## Conflicts and completion
 

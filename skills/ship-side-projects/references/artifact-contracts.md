@@ -8,6 +8,7 @@ Default to a short product brief, an ordered next-bets list, repository-native t
 
 - **Slice record:** identity, entry type, interaction mode, state and owner, risk class/rationale/escalation triggers, authorization source, exact revision/dirty state, goal, value hypothesis/outcome signal, time/energy budget, scope, traceable criteria, assumptions, decisions, actors/independence, UX collaboration and evidence for user-facing work, impacts, implementation readiness, TDD evidence/exception, required and obtained evidence, gates, acceptance, residual risks, next transition.
 - **Requirements:** goals, stakeholders, context, constraints, quality needs, functional requirements, glossary, traceability, decisions, approval history.
+- **User persona and agent context:** target segment, context, goals, behaviors, constraints, capabilities/accessibility needs, exclusions, evidence/assumption labels with source/date/confidence, contradictions, bounded User Agent missions, learning history, initial Requirements Engineer and UX authorship, and current UX owner.
 - **Architecture:** context, constraints, quality attributes, boundaries, runtime/deployment views, cross-cutting decisions, risks/debt, ADR links.
 - **ADR:** status, context, decision, alternatives, consequences, evidence.
 - **Documentation impact map:** artifact, impact, status (`pending-review`, `update-required`, `updated`, `reviewed-unchanged`, or `not-applicable`), reason, owner/evidence.

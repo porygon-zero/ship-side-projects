@@ -7,7 +7,6 @@ must:
   - "Use proportionate TDD and real workflow acceptance"
   - "Leave a clear resume point for spare-time work"
 must_not:
-  - "Invent personas or commercial demand"
+  - "Invent personas or commercial demand, or require a separate User Agent for this builder-only product"
   - "Treat solo acceptance as independent verification"
   - "Operate destructively on original photos without explicit authority and recovery evidence"
-

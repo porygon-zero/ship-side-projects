@@ -3,6 +3,7 @@
 - Working name:
 - Intended outcome: Personal utility / Learning / Craft / Community / Revenue
 - Primary user and underlying need:
+- Persona/context link and UX owner:
 - Evidence already available:
 - Riskiest assumption:
 - Smallest useful first release:
@@ -14,4 +15,3 @@
 - Data, privacy, and security exposure:
 - Conditions to continue, pause, archive, or stop:
 - Best next bet:
-

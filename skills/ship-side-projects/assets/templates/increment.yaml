@@ -27,6 +27,11 @@ actors_and_independence: []
 ux:
   user_facing: false
   participant: "" # lead-held perspective | specialist | not-applicable
+  persona:
+    id_and_version: ""
+    source: ""
+    owner: "" # UX Designer after initial Requirements Engineer + UX framing
+    learning_updates: []
   journey_or_task: ""
   interaction_and_content_decisions: []
   states: [] # loading | empty | error | success | permission | destructive confirmation | other
@@ -35,6 +40,18 @@ ux:
   implementation_checkpoints: []
   implemented_workflow_review: ""
   findings: []
+user_agent_challenge:
+  applicability: "not-assessed" # required | not-applicable
+  actor: ""
+  independence: "unassessed" # independent | not-independent
+  persona_version: ""
+  missions: []
+  revision: ""
+  observations_and_findings: []
+  product_disposition: []
+  ux_disposition: []
+  rerun_evidence: ""
+  limitation: "Persona-based challenge; not representative-user validation or product acceptance."
 architecture_impact: ""
 security_privacy_impact: ""
 operational_qualities: []
