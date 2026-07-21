@@ -24,6 +24,17 @@ acceptance_criteria: []
 assumptions: []
 decisions: []
 actors_and_independence: []
+ux:
+  user_facing: false
+  participant: "" # lead-held perspective | specialist | not-applicable
+  journey_or_task: ""
+  interaction_and_content_decisions: []
+  states: [] # loading | empty | error | success | permission | destructive confirmation | other
+  usability_accessibility_criteria: []
+  evidence_or_prototype: ""
+  implementation_checkpoints: []
+  implemented_workflow_review: ""
+  findings: []
 architecture_impact: ""
 security_privacy_impact: ""
 operational_qualities: []

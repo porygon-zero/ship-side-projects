@@ -1,0 +1,13 @@
+id: ux-development-collaboration
+prompt: "Add a first-run import wizard to my small web app. Users choose a file, map columns, review validation errors, and confirm the import. Implement it as the next user-facing feature."
+must:
+  - "Activate the UX Designer perspective from requirements through implemented-workflow review"
+  - "Have UX and development collaborate on the journey, technical constraints, and design decisions"
+  - "Cover loading, empty, validation-error, partial, success, cancellation, and destructive or irreversible states as applicable"
+  - "Define testable usability and accessibility criteria before or alongside implementation"
+  - "Review the real implemented workflow rather than stopping at a mock-up or visual polish pass"
+must_not:
+  - "Treat UX as an optional final review because the requested screens sound clear"
+  - "Reduce UX to colors, spacing, or visual styling"
+  - "Let development silently change material interaction behavior for implementation convenience"
+  - "Invent target-user feedback or claim independent UX validation from self-review"

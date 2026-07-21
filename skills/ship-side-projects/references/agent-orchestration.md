@@ -2,6 +2,8 @@
 
 Use perspectives to cover accountability and agents only to obtain bounded expertise, parallel discovery, or credible challenge. The default is one lead helping one experienced builder. Do not spawn an agent merely because a perspective exists.
 
+For every user-facing feature, assign the UX Designer perspective to the lead or a specialist and keep it active across requirements, planning, implementation checkpoints, and implemented-workflow review. Whether to spawn a separate UX agent depends on interaction complexity, uncertainty, available tools, and the value of focused expertise; UX participation itself is not optional.
+
 ## Selection
 
 | Change class | Default agent shape |
@@ -36,9 +38,9 @@ Do not let one actor author and independently approve the same artifact. Label a
 |---|---|---|---|---|
 | Product discovery | Goals, users, observed context | Testable product brief, assumptions, open decisions | Discovery readiness | Product priority or acceptance |
 | Product stewardship | Goal, evidence, constraints, next bets | Ordered slice, scope, value hypothesis, decision digest | Slice readiness | User approval or material risk acceptance |
-| UX Designer | Users, journeys, constraints, prototype/build | Usability/accessibility criteria, observations, findings | UX readiness | Product priority |
+| UX Designer | Users, evidence, journeys, constraints, prototype or running build | Interaction/content decisions, complete state model, usability/accessibility criteria, checkpoint observations and implemented-workflow findings | UX readiness at planning and acceptance | Product priority or implementation mechanism |
 | Solution Architect | Requirements, quality attributes, existing system | Boundaries, decisions, risks, fitness evidence | Architecture readiness | Product scope or residual-risk acceptance |
-| Software Developer | Authorized scope, design constraints, repo state | Implementation, developer tests/docs, reproducible handoff | Implementation feasibility | Independent quality/security gate |
+| Software Developer | Authorized scope, UX decisions and criteria, design constraints, repo state | Collaborative implementation, developer tests/docs, constraint feedback and reproducible handoff | Implementation feasibility | Independent quality/security gate or unilateral material UX change |
 | Testing Engineer | Criteria, risks, exact revision, environment | Risk-derived evidence, defects, gate recommendation | Quality gate | Product acceptance |
 | Security & Privacy Engineer | Data/threat scope, design, exact revision, deployment model | Controls, assurance evidence, residual risks | Security/privacy gate | User risk acceptance |
 | Deployment responsibility | Release artifact, config, runbook, migration/recovery | Release-readiness evidence and post-release plan | Deployment readiness | Product acceptance |
@@ -52,9 +54,10 @@ Use a fresh-context challenger or verifier when the lead's accumulated context, 
 
 Parallelize read-only discovery across disjoint concerns. Serialize overlapping edits, generated files, lockfiles, schemas, migrations, behavior-defining decisions, approval transitions, final documentation reconciliation, and external mutations. Assign one writer per overlapping artifact and have the lead integrate findings. Bound each assignment by a concrete question, deliverable, stopping condition, and proportionate effort budget.
 
+Treat UX and development as a feedback loop rather than sequential handoffs. Share design intent and technical constraints early; review the real interface at meaningful checkpoints; return material feasibility, usability, accessibility, or scope conflicts to the accountable perspectives before implementation hardens them. Preserve dissent and the evidence behind the final decision.
+
 ## Conflicts and completion
 
 Evidence outranks asserted expertise. Return product tradeoffs, time/maintenance cost, and material risk to the builder; architecture conflicts to the architecture perspective with implementation evidence; gate disputes to the accountable verifier with reproducible evidence. Never silently average conflicting conclusions.
 
 After corrections, rerun affected checks. Stop specialists when their contract is satisfied. Record the actual actor, mode, scope, revision, outcome, and independence label.
-

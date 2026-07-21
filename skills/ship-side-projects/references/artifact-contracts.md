@@ -6,7 +6,7 @@ Use existing project formats when they contain equivalent information. Otherwise
 
 Default to a short product brief, an ordered next-bets list, repository-native tests, and a concise handoff. Add the following records only when they reduce meaningful uncertainty, preserve decisions across long pauses, support collaborators, or control material risk. One file may satisfy several contracts.
 
-- **Slice record:** identity, entry type, interaction mode, state and owner, risk class/rationale/escalation triggers, authorization source, exact revision/dirty state, goal, value hypothesis/outcome signal, time/energy budget, scope, traceable criteria, assumptions, decisions, actors/independence, impacts, implementation readiness, TDD evidence/exception, required and obtained evidence, gates, acceptance, residual risks, next transition.
+- **Slice record:** identity, entry type, interaction mode, state and owner, risk class/rationale/escalation triggers, authorization source, exact revision/dirty state, goal, value hypothesis/outcome signal, time/energy budget, scope, traceable criteria, assumptions, decisions, actors/independence, UX collaboration and evidence for user-facing work, impacts, implementation readiness, TDD evidence/exception, required and obtained evidence, gates, acceptance, residual risks, next transition.
 - **Requirements:** goals, stakeholders, context, constraints, quality needs, functional requirements, glossary, traceability, decisions, approval history.
 - **Architecture:** context, constraints, quality attributes, boundaries, runtime/deployment views, cross-cutting decisions, risks/debt, ADR links.
 - **ADR:** status, context, decision, alternatives, consequences, evidence.
@@ -21,4 +21,3 @@ Default to a short product brief, an ordered next-bets list, repository-native t
 Keep one source of truth for each fact and link rather than duplicate. Stable identifiers should connect requirements, acceptance criteria, tests, ADRs, and evidence.
 
 When a specialist skill contributes, record its name, bounded role, inputs, revision, output/evidence, permitted mutations, and independence label in the existing increment or review record rather than creating a parallel source of truth.
-
