@@ -17,7 +17,7 @@ Default to a short product brief, an ordered next-bets list, repository-native t
 - **Course correction:** new evidence, invalidated item, value/scope/risk effects, preserved and discarded work, new authority, updated readiness, and gates to repeat.
 - **Threat/privacy assessment:** assets/data, trust boundaries, threats, controls, verification, residual risks and acceptance, plus the increment's dated runtime/toolchain, direct-library, and framework currency check and update dispositions.
 - **Acceptance record:** revision, criteria, environment, observations, result, rejection evidence, approver/date.
-- **Handoff/PR:** scope, decisions, evidence, documentation, operations, recurring cost, maintenance expectations, residual risks, acceptance.
+- **Handoff/PR:** increment ID, title in `increment XX: short title` format, base/head branches, final revision, URL or manual-creation blocker, scope, decisions, evidence, documentation, operations, recurring cost, maintenance expectations, residual risks, acceptance, and confirmation that all merge-required work was committed before PR creation.
 
 Keep one source of truth for each fact and link rather than duplicate. Stable identifiers should connect requirements, acceptance criteria, tests, ADRs, and evidence.
 

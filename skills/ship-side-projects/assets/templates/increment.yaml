@@ -10,6 +10,8 @@ authorization:
   source: ""
   scope: ""
   excluded_mutations: []
+  pr_base_branch: ""
+  increment_head_branch: ""
 revision:
   identifier: ""
   dirty_state: ""
@@ -92,6 +94,17 @@ unavailable_checks: []
 review_findings: []
 migration_rollback: ""
 acceptance_evidence: ""
+pull_request_closeout:
+  title: "" # increment XX: short title
+  base_branch: ""
+  head_branch: ""
+  all_merge_required_work_committed: false
+  final_head_revision: ""
+  push_outcome: "not-run"
+  pr_outcome: "not-run" # opened | manual-required | not-run
+  pr_url: ""
+  blocker: ""
+  manual_description: ""
 resume_next_action: ""
 residual_risks: []
 next_transition: ""

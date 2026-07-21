@@ -1,3 +1,12 @@
+<!-- Title: increment XX: short title -->
+
+## Increment and branches
+
+- Increment:
+- Base branch:
+- Head branch:
+- Final head revision:
+
 ## Goal and user value
 
 ## Authorization and exact revision
@@ -26,3 +35,7 @@
 
 ## Commands run
 
+## Closeout completeness
+
+- All merge-required code, tests, documentation, evidence, migrations, generated artifacts, and retrospective committed: Yes / No
+- Uncommitted unrelated work preserved:
